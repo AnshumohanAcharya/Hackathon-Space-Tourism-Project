@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+    
+<!-- Our custom CSS -->
+<link rel="stylesheet" href="index.css">
+<title>Space tourism website</title>
+<script src="navigation.js" defer></script>
+<script> src="tabs.js" </script>
+</head>
+<body class="destination">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+    <div>
+        <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination-moon.html"><span aria-hidden="true">01</span>Destination</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew-commander.html"><span aria-hidden="true">02</span>Crew</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology-vehicle.html"><span aria-hidden="true">03</span>Technology</a>
+        </ul>
+    </nav>
+    </header>
+    
+    <main id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">01</span> Pick your destination</h1>
+        <source srcset="assets/destination/image-mars.webp" type="image/webp">
+        <img src="assets/destination/image-mars.png" alt="the Mars">
+    <div class="tab-list underline-indicators flex">
+        <li><a class="uppercase ff-sans-cond text-white text-accent letter-spacing-2" href="destination-moon.html"><span aria-hidden="true"></span>Moon</a>
+        <li class="active"><a class="uppercase ff-sans-cond text-white text-accent letter-spacing-2" href="destination-mars.html"><span aria-hidden="true"></span>Mars</a>
+        <li><a class="uppercase ff-sans-cond text-white text-accent letter-spacing-2" href="destination-europa.html"><span aria-hidden="true"></span>Europa</a>
+        <li><a class="uppercase ff-sans-cond text-white text-accent letter-spacing-2" href="destination-titan.html"><span aria-hidden="true"></span>Titan</a>
+    </div>
+
+    <article class="destination-info flow">
+        <h2 class="fs-800 uppercase ff-serif">Mars</h2>
+        <p>Don't forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+            the tallest planetary mountain in our solar system. It’s two and a half times 
+            the size of Everest!</p>
+        
+        <div class="destination-meta flex">
+        <div>
+        <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+        <p class="ff-serif uppercase">225 mil. km</p>
+        </div>
+        <div>
+        <h3 class="text-accent fs-200 uppercase">Est. travel time</h3>
+        <p class="ff-serif uppercase">9 months</p>
+        </div>
+        </div>
+        
+    </article>
+    </main>
+</body>
+</html>
